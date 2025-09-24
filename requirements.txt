@@ -1,0 +1,8 @@
+# requirements.txt
+
+fastapi
+uvicorn
+gunicorn
+google-cloud-trace # From your original code's dependencies
+google-api-python-client # Likely needed for ADK
+google-adk
