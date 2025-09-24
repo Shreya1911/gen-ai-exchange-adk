@@ -46,7 +46,7 @@ app: FastAPI = get_fast_api_app(
 # Add CORS middleware to allow requests from the frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:5173","http://localhost:8083","http://localhost:8080"],  # Frontend URLs (Vite dev server)
+    allow_origins=["https://genai-exchange-ui.vercel.app/","http://localhost:3000", "http://localhost:5173","http://localhost:8083","http://localhost:8080"],  # Frontend URLs (Vite dev server)
     allow_credentials=True,
     allow_methods=["*"],  # Allow all methods
     allow_headers=["*"],  # Allow all headers
